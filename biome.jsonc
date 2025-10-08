@@ -2,9 +2,18 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["ultracite"],
   "files": {
-    "includes": ["**", "!**/*.css", "!**/cloudflare-env.d.ts"]
+    "includes": [
+      "**",
+      "!**/*.css",
+      "!**/cloudflare-env.d.ts",
+      "!**/convex/_generated"
+    ]
   },
   "linter": {
-    "rules": {}
+    "rules": {
+      "suspicious": {
+        "noConsole": "off"
+      }
+    }
   }
 }

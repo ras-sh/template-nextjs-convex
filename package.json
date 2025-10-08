@@ -1,18 +1,18 @@
 {
-  "name": "@ras-sh/template-nextjs",
+  "name": "@ras-sh/template-nextjs-convex",
   "version": "0.0.1",
   "type": "module",
   "private": true,
-  "description": "Template for Next.js projects.",
+  "description": "Template for Next.js projects with Convex.",
   "keywords": [],
   "homepage": "https://ras.sh",
   "bugs": {
-    "url": "https://github.com/ras-sh/template-nextjs/issues",
+    "url": "https://github.com/ras-sh/template-nextjs-convex/issues",
     "email": "hi@ras.sh"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ras-sh/template-nextjs"
+    "url": "https://github.com/ras-sh/template-nextjs-convex"
   },
   "license": "MIT",
   "author": {
@@ -21,7 +21,9 @@
     "url": "https://ras.sh"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "concurrently \"pnpm dev:web\" \"pnpm dev:convex\"",
+    "dev:web": "next dev --turbopack",
+    "dev:convex": "convex dev",
     "build": "next build",
     "start": "next start",
     "export": "pnpm build && next export -o _static",
@@ -35,6 +37,7 @@
   "dependencies": {
     "@opennextjs/cloudflare": "^1.9.1",
     "@ras-sh/ui": "^0.0.2",
+    "convex": "^1.27.3",
     "next": "15.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
@@ -46,6 +49,7 @@
     "@types/node": "^24.7.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "concurrently": "^9.2.1",
     "lefthook": "^1.13.6",
     "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
