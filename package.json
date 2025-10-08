@@ -1,0 +1,55 @@
+{
+  "name": "@ras-sh/template-nextjs",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "description": "Template for Next.js projects.",
+  "keywords": [],
+  "homepage": "https://ras.sh",
+  "bugs": {
+    "url": "https://github.com/ras-sh/template-nextjs/issues",
+    "email": "hi@ras.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ras-sh/template-nextjs"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Richard Solomou",
+    "email": "hi@ras.sh",
+    "url": "https://ras.sh"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "export": "pnpm build && next export -o _static",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "check-types": "tsc --noEmit",
+    "check": "ultracite check",
+    "fix": "ultracite fix --unsafe"
+  },
+  "dependencies": {
+    "@opennextjs/cloudflare": "^1.9.1",
+    "@ras-sh/ui": "^0.0.2",
+    "next": "15.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@ras-sh/typescript-config": "^0.0.2",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "lefthook": "^1.13.6",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "ultracite": "5.5.0",
+    "wrangler": "^4.42.0"
+  }
+}
