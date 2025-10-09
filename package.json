@@ -32,7 +32,7 @@
     "fix": "ultracite fix --unsafe"
   },
   "dependencies": {
-    "@ras-sh/ui": "^0.0.2",
+    "@ras-sh/ui": "^0.0.3",
     "convex": "^1.27.4",
     "next": "15.5.4",
     "react": "^19.2.0",
