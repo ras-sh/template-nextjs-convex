@@ -32,8 +32,8 @@
     "fix": "ultracite fix --unsafe"
   },
   "dependencies": {
-    "@ras-sh/ui": "^0.0.2",
-    "convex": "^1.27.4",
+    "@ras-sh/ui": "^0.0.3",
+    "convex": "^1.27.5",
     "next": "15.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
@@ -42,7 +42,7 @@
     "@biomejs/biome": "^2.2.5",
     "@ras-sh/typescript-config": "^0.0.2",
     "@tailwindcss/postcss": "^4.1.14",
-    "@types/node": "^24.7.0",
+    "@types/node": "^24.7.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
     "concurrently": "^9.2.1",
