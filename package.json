@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@ras-sh/ui": "^0.0.6",
-    "convex": "^1.28.0",
+    "convex": "^1.28.1",
     "next": "^16.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
@@ -46,9 +46,9 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "concurrently": "^9.2.1",
-    "lefthook": "^2.0.1",
+    "lefthook": "^2.0.2",
     "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3",
-    "ultracite": "6.0.5"
+    "ultracite": "6.1.0"
   }
 }
