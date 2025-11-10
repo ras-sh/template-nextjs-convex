@@ -33,22 +33,22 @@
   },
   "dependencies": {
     "@ras-sh/ui": "^0.0.6",
-    "convex": "^1.28.0",
+    "convex": "^1.28.2",
     "next": "^16.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.2",
+    "@biomejs/biome": "^2.3.4",
     "@ras-sh/typescript-config": "^0.0.3",
-    "@tailwindcss/postcss": "^4.1.16",
-    "@types/node": "^24.9.2",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "concurrently": "^9.2.1",
-    "lefthook": "^2.0.1",
-    "tailwindcss": "^4.1.16",
+    "lefthook": "^2.0.2",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "ultracite": "6.0.5"
+    "ultracite": "6.3.2"
   }
 }
